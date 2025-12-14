@@ -1,16 +1,61 @@
-body{
-    background-color: black;
-    
+body {
+    font-family: Arial, sans-serif;
+    background-color: #eef2f3;
+    text-align: center;
+    padding: 30px;
 }
-h1{
-    background-color:brown;
-    font-family: 'Times New Roman', Times, serif;
+
+h1 {
+    margin-bottom: 30px;
 }
-p{
-    font-family: Verdana, Geneva, Tahoma, sans-serif;
-    font-family: 'Times New Roman', Times, serif;
-    font-size: larger;
+
+/* Box */
+.box {
+    width: 150px;
+    height: 150px;
+    background-color: steelblue;
+    margin: 20px auto;
+    transition: all 0.4s ease;
+    border-radius: 10px;
 }
-h2{
-    font-family: 'Times New Roman', Times, serif;
+
+/* Text Block */
+.text {
+    font-size: 18px;
+    margin: 20px;
+    color: #333;
+    cursor: pointer;
+}
+
+/* Buttons */
+button {
+    padding: 12px 20px;
+    margin: 10px;
+    font-size: 15px;
+    cursor: pointer;
+    border: none;
+    border-radius: 5px;
+    background-color: #333;
+    color: white;
+}
+
+button:hover {
+    background-color: #555;
+}
+
+/* Circle */
+.circle {
+    width: 80px;
+    height: 80px;
+    background-color: tomato;
+    border-radius: 50%;
+    margin: 30px auto;
+    transition: transform 0.4s, background-color 0.4s;
+}
+
+/* Icon */
+.icon {
+    font-size: 40px;
+    cursor: pointer;
+    transition: transform 0.4s;
 }

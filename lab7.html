@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Responsive JavaScript Lab Task</title>
+
+    <style>
+        /* ===== Base Styles (Desktop) ===== */
+        body {
+            margin: 0;
+            padding: 0;
+            font-family: Arial, sans-serif;
+            background-color: #f2f2f2;
+        }
+
+        .container {
+            width: 40%;
+            margin: 120px auto;
+            padding: 25px;
+            text-align: center;
+            background-color: white;
+            border-radius: 8px;
+            box-shadow: 0 0 10px rgba(0,0,0,0.1);
+        }
+
+        h2 {
+            margin-bottom: 20px;
+        }
+
+        button {
+            width: 100%;
+            padding: 12px;
+            margin: 10px 0;
+            font-size: 16px;
+            cursor: pointer;
+            border: none;
+            border-radius: 5px;
+            background-color: #333;
+            color: white;
+        }
+
+        button:hover {
+            background-color: #555;
+        }
+
+        /* ===== Mobile Responsive Styles ===== */
+        @media (max-width: 768px) {
+            .container {
+                width: 85%;
+                margin: 60px auto;
+                padding: 20px;
+            }
+
+            h2 {
+                font-size: 20px;
+            }
+
+            button {
+                font-size: 14px;
+                padding: 10px;
+            }
+        }
+    </style>
+</head>
+<body>
+
+    <div class="container">
+        <h2>JavaScript Lab Tasks</h2>
+
+        <button onclick="task1()">Task 1: Name & Registration</button>
+
+        <button onclick="task2()">Task 2: Arithmetic & Comparison</button>
+    </div>
+
+    <script>
+        // ===== Task 1 =====
+        function task1() {
+            let name = prompt("Enter your Name:");
+            let regId = prompt("Enter your Registration ID:");
+
+            alert("Name: " + name + "\nRegistration ID: " + regId);
+        }
+
+        // ===== Task 2 =====
+        function task2() {
+            let num1 = parseFloat(prompt("Enter first number:"));
+            let num2 = parseFloat(prompt("Enter second number:"));
+
+            let sum = num1 + num2;
+            let difference = num1 - num2;
+            let product = num1 * num2;
+            let quotient = num1 / num2;
+            let comparison = num1 > num2;
+
+            alert(
+                "Sum: " + sum +
+                "\nDifference: " + difference +
+                "\nProduct: " + product +
+                "\nQuotient: " + quotient +
+                "\nComparison (num1 > num2): " + comparison
+            );
+        }
+    </script>
+
+</body>
+</html>
